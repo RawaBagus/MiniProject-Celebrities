@@ -1,0 +1,411 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity\\Celebrity.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj",
+        "projectName": "Celebrity.Data.Interface",
+        "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj",
+        "packagesPath": "C:\\Users\\bhira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bhira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data\\Celebrity.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data\\Celebrity.Data.csproj",
+        "projectName": "Celebrity.Data",
+        "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data\\Celebrity.Data.csproj",
+        "packagesPath": "C:\\Users\\bhira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bhira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj"
+              },
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj",
+        "projectName": "Celebrity.Model",
+        "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj",
+        "packagesPath": "C:\\Users\\bhira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bhira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj",
+        "projectName": "Celebrity.Service.Interface",
+        "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj",
+        "packagesPath": "C:\\Users\\bhira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bhira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service\\Celebrity.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service\\Celebrity.Service.csproj",
+        "projectName": "Celebrity.Service",
+        "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service\\Celebrity.Service.csproj",
+        "packagesPath": "C:\\Users\\bhira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bhira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj"
+              },
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.30, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity\\Celebrity.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity\\Celebrity.API.csproj",
+        "projectName": "Celebrity.API",
+        "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity\\Celebrity.API.csproj",
+        "packagesPath": "C:\\Users\\bhira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bhira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data\\Celebrity.Data.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data\\Celebrity.Data.csproj"
+              },
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj"
+              },
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service\\Celebrity.Service.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service\\Celebrity.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

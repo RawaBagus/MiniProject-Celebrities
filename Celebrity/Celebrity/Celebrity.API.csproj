@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>676c2eec-f759-4f6f-8dd4-aa3d72e0139d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Celebrity.Data\Celebrity.Data.csproj" />
+    <ProjectReference Include="..\Celebrity.Model\Celebrity.Model.csproj" />
+    <ProjectReference Include="..\Celebrity.Service\Celebrity.Service.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Celebrity.Service.Interface/1.0.0": {
+        "runtime": {
+          "Celebrity.Service.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Celebrity.Service.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
