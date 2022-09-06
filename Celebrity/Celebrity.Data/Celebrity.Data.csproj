@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Celebrity.Data.Interface\Celebrity.Data.Interface.csproj" />
+    <ProjectReference Include="..\Celebrity.Model\Celebrity.Model.csproj" />
     <ProjectReference Include="..\Celebrity.Service.Interface\Celebrity.Service.Interface.csproj" />
   </ItemGroup>
 

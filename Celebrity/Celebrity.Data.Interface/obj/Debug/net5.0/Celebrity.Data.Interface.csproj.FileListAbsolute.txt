@@ -14,3 +14,10 @@ C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data
 C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\obj\Debug\net5.0\Celebrity.Data.Interface.pdb
 C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\obj\Debug\net5.0\Celebrity.Data.Interface.genruntimeconfig.cache
 C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\obj\Debug\net5.0\ref\Celebrity.Data.Interface.dll
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\bin\Debug\net5.0\Celebrity.Model.deps.json
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\bin\Debug\net5.0\Celebrity.Model.runtimeconfig.json
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\bin\Debug\net5.0\Celebrity.Model.runtimeconfig.dev.json
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\bin\Debug\net5.0\Celebrity.Model.exe
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\bin\Debug\net5.0\Celebrity.Model.dll
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\bin\Debug\net5.0\Celebrity.Model.pdb
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Data.Interface\obj\Debug\net5.0\Celebrity.Data.Interface.csproj.CopyComplete

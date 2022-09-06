@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Celebrity.Data.Interface/1.0.0": {
+        "dependencies": {
+          "Celebrity.Model": "1.0.0"
+        },
         "runtime": {
           "Celebrity.Data.Interface.dll": {}
+        }
+      },
+      "Celebrity.Model/1.0.0": {
+        "runtime": {
+          "Celebrity.Model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Celebrity.Data.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Celebrity.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

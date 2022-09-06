@@ -2,6 +2,7 @@
 using Celebrity.Service.Interface.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Celebrity.API.Controllers
@@ -25,6 +26,18 @@ namespace Celebrity.API.Controllers
         public async Task<IActionResult> DeleteCelebrityById(int id) 
         {
             var result = await celebrityService.DeleteByCelebrityId(id);
+            return Ok(result);
+        }
+        [HttpGet]
+        public async Task<List<CelebrityData>> GetAllData()
+        {
+            var result = await celebrityService.GetAllData();
+            return result;
+        }
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update([FromBody]CelebrityData data,int id)
+        {
+            var result = await celebrityService.UpdateByCelebrityId(data, id);
             return Ok(result);
         }
 

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Celebrity.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Celebrity.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Celebrity.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Celebrity.Model/1.0.0": {
+      "type": "project",
+      "path": "../Celebrity.Model/Celebrity.Model.csproj",
+      "msbuildProject": "../Celebrity.Model/Celebrity.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Celebrity.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\bhira\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+              "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

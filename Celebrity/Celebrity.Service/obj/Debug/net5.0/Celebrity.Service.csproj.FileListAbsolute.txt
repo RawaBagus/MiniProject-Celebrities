@@ -56,3 +56,9 @@ C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Serv
 C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\obj\Debug\net5.0\Celebrity.Service.pdb
 C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\obj\Debug\net5.0\Celebrity.Service.genruntimeconfig.cache
 C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\obj\Debug\net5.0\ref\Celebrity.Service.dll
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\bin\Debug\net5.0\Celebrity.Model.deps.json
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\bin\Debug\net5.0\Celebrity.Model.runtimeconfig.json
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\bin\Debug\net5.0\Celebrity.Model.runtimeconfig.dev.json
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\bin\Debug\net5.0\Celebrity.Model.exe
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\bin\Debug\net5.0\Celebrity.Model.dll
+C:\Users\bhira\Documents\GitHub\MiniProject-Celebrities\Celebrity\Celebrity.Service\bin\Debug\net5.0\Celebrity.Model.pdb

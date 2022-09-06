@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -85,6 +89,9 @@
             "projectReferences": {
               "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj": {
                 "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj"
+              },
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj"
               },
               "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj": {
                 "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj"
@@ -209,7 +216,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+                "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

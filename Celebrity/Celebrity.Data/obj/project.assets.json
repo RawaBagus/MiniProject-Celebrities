@@ -72,6 +72,9 @@
       "Celebrity.Data.Interface/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Celebrity.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Celebrity.Data.Interface.dll": {}
         },
@@ -79,9 +82,22 @@
           "bin/placeholder/Celebrity.Data.Interface.dll": {}
         }
       },
+      "Celebrity.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Celebrity.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Celebrity.Model.dll": {}
+        }
+      },
       "Celebrity.Service.Interface/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Celebrity.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Celebrity.Service.Interface.dll": {}
         },
@@ -191,6 +207,11 @@
       "path": "../Celebrity.Data.Interface/Celebrity.Data.Interface.csproj",
       "msbuildProject": "../Celebrity.Data.Interface/Celebrity.Data.Interface.csproj"
     },
+    "Celebrity.Model/1.0.0": {
+      "type": "project",
+      "path": "../Celebrity.Model/Celebrity.Model.csproj",
+      "msbuildProject": "../Celebrity.Model/Celebrity.Model.csproj"
+    },
     "Celebrity.Service.Interface/1.0.0": {
       "type": "project",
       "path": "../Celebrity.Service.Interface/Celebrity.Service.Interface.csproj",
@@ -200,6 +221,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Celebrity.Data.Interface >= 1.0.0",
+      "Celebrity.Model >= 1.0.0",
       "Celebrity.Service.Interface >= 1.0.0",
       "Microsoft.Extensions.Configuration.Abstractions >= 6.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0"
@@ -234,6 +256,9 @@
           "projectReferences": {
             "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj": {
               "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Data.Interface\\Celebrity.Data.Interface.csproj"
+            },
+            "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj": {
+              "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Model\\Celebrity.Model.csproj"
             },
             "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj": {
               "projectPath": "C:\\Users\\bhira\\Documents\\GitHub\\MiniProject-Celebrities\\Celebrity\\Celebrity.Service.Interface\\Celebrity.Service.Interface.csproj"

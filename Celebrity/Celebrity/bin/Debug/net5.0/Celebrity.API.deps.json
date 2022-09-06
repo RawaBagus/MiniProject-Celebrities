@@ -738,6 +738,7 @@
       "Celebrity.Data/1.0.0": {
         "dependencies": {
           "Celebrity.Data.Interface": "1.0.0",
+          "Celebrity.Model": "1.0.0",
           "Celebrity.Service.Interface": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
@@ -750,6 +751,9 @@
         }
       },
       "Celebrity.Data.Interface/1.0.0": {
+        "dependencies": {
+          "Celebrity.Model": "1.0.0"
+        },
         "runtime": {
           "Celebrity.Data.Interface.dll": {}
         },
@@ -783,6 +787,9 @@
         }
       },
       "Celebrity.Service.Interface/1.0.0": {
+        "dependencies": {
+          "Celebrity.Model": "1.0.0"
+        },
         "runtime": {
           "Celebrity.Service.Interface.dll": {}
         },
