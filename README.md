@@ -18,7 +18,7 @@ Push project kedalam git masing-masing, access public.	- Done
 ![image](https://user-images.githubusercontent.com/39549382/188420207-bb3e4ca2-dfcf-42ee-ac07-a673b48e643e.png)
 # Number 2 DONE
 ![image](https://user-images.githubusercontent.com/39549382/188539363-20c3acf2-a0ca-413d-a7a1-92b1bf630bd3.png)
-# Number 3 In Progress
+# Number 3 In Progress -SQL PAGING-
 # Number 4 In Progress
 # Number 5 In Progress
 # Number 6 DONE
