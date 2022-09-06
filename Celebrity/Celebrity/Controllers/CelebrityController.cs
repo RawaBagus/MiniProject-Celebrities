@@ -21,5 +21,12 @@ namespace Celebrity.API.Controllers
             var result = await celebrityService.CreateNewCelebrity(celeb.Name,celeb.Date_Of_Birth,celeb.Town,celeb.Movies.ToArray());
             return Ok(result);
         }
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteCelebrityById(int id) 
+        {
+            var result = await celebrityService.DeleteByCelebrityId(id);
+            return Ok(result);
+        }
+
     }
 }

@@ -21,5 +21,11 @@ namespace Celebrity.Service.Services
             var result = await celebrityRepository.CreateNewCelebrity(name, date, address, movies);
             return result;
         }
+
+        public async Task<bool> DeleteByCelebrityId(int id)
+        {
+            var result = await celebrityRepository.DeleteByCelebrityId(id);
+            return result;
+        }
     }
 }

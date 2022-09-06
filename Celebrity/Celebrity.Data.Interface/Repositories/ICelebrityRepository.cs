@@ -9,6 +9,7 @@ namespace Celebrity.Data.Interface.Repositories
     public interface ICelebrityRepository
     {
         public Task<bool> CreateNewCelebrity(string name, string date, string address, string[] movies);
+        public Task<bool> DeleteByCelebrityId(int id);
         public Task<bool> CreateNewMovie(string name);
         public Task<bool> CreateNewAddress(string name);
         public Task<bool> IsMovieThere(string name);

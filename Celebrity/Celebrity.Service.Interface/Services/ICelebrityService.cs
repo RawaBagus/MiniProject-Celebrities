@@ -8,6 +8,7 @@ namespace Celebrity.Service.Interface.Services
 {
     public interface ICelebrityService
     {
-        Task<bool> CreateNewCelebrity(string name, string date, string address, string[] movies);
+        public Task<bool> CreateNewCelebrity(string name, string date, string address, string[] movies);
+        public Task<bool> DeleteByCelebrityId(int id);
     }
 }
