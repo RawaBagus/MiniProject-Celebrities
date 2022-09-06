@@ -21,7 +21,7 @@ namespace Celebrity.Data.Repositories
             {
                 await CreateNewAddress(address);
             }
-            if(await IsCelebrityThere(name) == false)
+            if(await IsCelebrityThere(name) == true)
             {
                 return false;
             }
