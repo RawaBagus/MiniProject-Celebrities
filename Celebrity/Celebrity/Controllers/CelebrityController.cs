@@ -29,7 +29,7 @@ namespace Celebrity.API.Controllers
             return Ok(result);
         }
         [HttpGet]
-        public async Task<List<CelebrityData>> GetAllData()
+        public async Task<List<CelebrityDataShow>> GetAllData()
         {
             var result = await celebrityService.GetAllData();
             return result;

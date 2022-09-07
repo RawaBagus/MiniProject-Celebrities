@@ -23,14 +23,15 @@ namespace Celebrity.Data.Repositories
                 ") values(@Name, @Date_Of_Birth, @IdTown)", new {Name=name,Date_Of_Birth=date,IdTown=TownId});
             return true;
         }
-        public async Task<List<CelebrityData>> GetAllData()
+        public async Task<List<CelebrityDataShow>> GetAllData()
         {
-            var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
+            var result = await _dbService.GetList<CelebrityDataShow>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
                 "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town, " +
+                "Movies.Name as Movie " +
                 "from Celebrities " +
-                "join MoviesAndCelebrities on Celebrities.Id=MoviesAndCelebrities.IdCelebrity " +
-                "right join Movies on Movies.Id=MoviesAndCelebrities.IdMovie " +
+                "left outer join MoviesAndCelebrities on Celebrities.Id=MoviesAndCelebrities.IdCelebrity " +
+                "join Movies on Movies.Id=MoviesAndCelebrities.IdMovie " +
                 "group by Celebrities.Id " +
                 "order by Celebrities.Id asc " +
                 "limit 10",new { });

@@ -11,7 +11,7 @@ namespace Celebrity.Data.Interface.Repositories
     {
         public Task<bool> CreateNewCelebrity(string name, string date, int TownId);
         public Task<bool> DeleteByCelebrityId(int id);
-        public Task<List<CelebrityData>> GetAllData();
+        public Task<List<CelebrityDataShow>> GetAllData();
         public Task<bool> UpdateCelebrityById(int id,string name, string date,int TownId);
         public Task<bool> CreateNewMovie(string name);
         public Task<bool> CreateNewAddress(string name);
