@@ -49,6 +49,10 @@ namespace Celebrity.Service.Services
         }
         public async Task<bool> UpdateByCelebrityId(CelebrityData data, int id)
         {
+            if (await celebrityRepository.IsAddressThere(data.Town) == false)
+            {
+                await celebrityRepository.CreateNewAddress(data.Town);
+            }
             int TownId = await celebrityRepository.GetIdByName("Towns", data.Town);
             var result = await celebrityRepository.UpdateCelebrityById(id, data.Name, data.Date_Of_Birth, TownId);
             foreach(string x in data.Movies)

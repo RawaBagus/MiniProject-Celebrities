@@ -28,20 +28,20 @@ namespace Celebrity.Data.Repositories
             var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
                 "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town, " +
-                "Movies.Name as movies " +
                 "from Celebrities " +
                 "join MoviesAndCelebrities on Celebrities.Id=MoviesAndCelebrities.IdCelebrity " +
                 "right join Movies on Movies.Id=MoviesAndCelebrities.IdMovie " +
                 "group by Celebrities.Id " +
                 "order by Celebrities.Id asc " +
                 "limit 10",new { });
+            
             return result;
         }
         public async Task<bool> UpdateCelebrityById(int id, string name, string date, int TownId)
         {
             await _dbService.ModifyData("update Celebrities " +
-                "set Name=" + name + " Date_Of_Birth=" + date + " IdTown=" + TownId + " " +
-                "where Id=" + id, new {});
+                "set Name=@name, Date_Of_Birth=@date, IdTown=@TownId " +
+                "where Id=@id", new {name=name,date=date,TownId=TownId,id=id});
             return true;
         }
         public async Task<bool> DeleteByCelebrityId(int id)
