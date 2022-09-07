@@ -4,9 +4,9 @@ List of things to do:
 
 2 Buat API untuk insert data per Celebrity (name, born, address, movies dalam satu request)	Done
 
-3 Api untuk menampilkan semua data dalam paging per 10 data	
+3 Api untuk menampilkan semua data dalam paging per 10 data	Done
 
-4 Api untuk menampilkan semua data berdasarkan filter movies	
+4 Api untuk menampilkan semua data berdasarkan filter movies	Done
 
 5 Api untuk mengedit / update data per celebrity	Done
 
@@ -19,7 +19,9 @@ List of things to do:
 # Number 2 DONE
 ![image](https://user-images.githubusercontent.com/39549382/188539363-20c3acf2-a0ca-413d-a7a1-92b1bf630bd3.png)
 # Number 3 GET DONE -SQL PAGING WAITING-
-# Number 4 In Progress
+![image](https://user-images.githubusercontent.com/39549382/188880877-9248610c-48ef-45b0-bdc7-572b6132c24b.png)
+# Number 4 Done
+![image](https://user-images.githubusercontent.com/39549382/188881086-edb53216-483a-48d8-92ca-b229a11eaf64.png)
 # Number 5 Done
 ![image](https://user-images.githubusercontent.com/39549382/188779971-3c4e9aac-ec6e-4ba1-9641-8374c2fd73ec.png)
 # Number 6 DONE
