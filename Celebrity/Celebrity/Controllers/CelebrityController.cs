@@ -34,12 +34,12 @@ namespace Celebrity.API.Controllers
             var result = await celebrityService.GetAllData();
             return result;
         }
-        /*[HttpGet]
-        public async Task<List<CelebrityData>> GetDataByMovie([FromBody] string MovieName)
+        [HttpGet("{input}")]
+        public async Task<List<CelebrityData>> GetDataByMovie(string input)
         {
-            var result = await celebrityService.GetDataByMovie(MovieName);
+            var result = await celebrityService.GetDataByMovie(input);
             return result;
-        }*/
+        }
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update([FromBody]CelebrityData data,int id)
         {

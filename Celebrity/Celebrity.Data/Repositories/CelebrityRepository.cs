@@ -36,14 +36,18 @@ namespace Celebrity.Data.Repositories
         }
         public async Task<List<CelebrityData>> GetDataByMovie(string Movie)
         {
+            string x = "%";
+            x = x + Movie + x;
             var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
                 "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town " +
                 "from Celebrities " +
-                "where Movies.Name like %@Name%" +
+                "left outer join MoviesAndCelebrities on Celebrities.Id=MoviesAndCelebrities.IdCelebrity " +
+                "left outer join Movies on Movies.Id=MoviesAndCelebrities.IdMovie " +
+                "where Movies.Name like @Name " +
                 "group by Celebrities.Id " +
                 "order by Celebrities.Id asc " +
-                "limit 10", new { Name= Movie});
+                "limit 10", new { Name= x});
             return result;
         }
 
