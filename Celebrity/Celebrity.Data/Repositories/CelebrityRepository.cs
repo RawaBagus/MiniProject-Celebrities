@@ -23,21 +23,30 @@ namespace Celebrity.Data.Repositories
                 ") values(@Name, @Date_Of_Birth, @IdTown)", new {Name=name,Date_Of_Birth=date,IdTown=TownId});
             return true;
         }
-        public async Task<List<CelebrityDataShow>> GetAllData()
+        public async Task<List<CelebrityData>> GetAllData()
         {
-            var result = await _dbService.GetList<CelebrityDataShow>("select Celebrities.Name, " +
+            var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
-                "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town, " +
-                "Movies.Name as Movie " +
+                "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town " +
                 "from Celebrities " +
-                "left outer join MoviesAndCelebrities on Celebrities.Id=MoviesAndCelebrities.IdCelebrity " +
-                "join Movies on Movies.Id=MoviesAndCelebrities.IdMovie " +
                 "group by Celebrities.Id " +
                 "order by Celebrities.Id asc " +
                 "limit 10",new { });
-            
             return result;
         }
+        public async Task<List<CelebrityData>> GetDataByMovie(string Movie)
+        {
+            var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
+                "Celebrities.Date_Of_Birth, " +
+                "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town " +
+                "from Celebrities " +
+                "where Movies.Name like %@Name%" +
+                "group by Celebrities.Id " +
+                "order by Celebrities.Id asc " +
+                "limit 10", new { Name= Movie});
+            return result;
+        }
+
         public async Task<bool> UpdateCelebrityById(int id, string name, string date, int TownId)
         {
             await _dbService.ModifyData("update Celebrities " +
@@ -91,6 +100,14 @@ namespace Celebrity.Data.Repositories
 
             await _dbService.ModifyData("insert into MoviesAndCelebrities values(@IdCelebrity,@IdMovie)", new { IdCelebrity = CelebrityId, IdMovie = MovieId });
             return true;
+        }
+        public async Task<List<string>> GetAllMovies(int id)
+        {
+            var result = await _dbService.GetList<string>("select Movies.Name from Celebrities " +
+                "join MoviesAndCelebrities on Celebrities.Id=MoviesAndCelebrities.IdCelebrity " +
+                "join Movies on Movies.Id=MoviesAndCelebrities.IdMovie " +
+                "where Celebrities.Id=@id", new { id = id });
+            return result;
         }
 
         

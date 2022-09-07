@@ -29,11 +29,17 @@ namespace Celebrity.API.Controllers
             return Ok(result);
         }
         [HttpGet]
-        public async Task<List<CelebrityDataShow>> GetAllData()
+        public async Task<List<CelebrityData>> GetAllData()
         {
             var result = await celebrityService.GetAllData();
             return result;
         }
+        /*[HttpGet]
+        public async Task<List<CelebrityData>> GetDataByMovie([FromBody] string MovieName)
+        {
+            var result = await celebrityService.GetDataByMovie(MovieName);
+            return result;
+        }*/
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update([FromBody]CelebrityData data,int id)
         {

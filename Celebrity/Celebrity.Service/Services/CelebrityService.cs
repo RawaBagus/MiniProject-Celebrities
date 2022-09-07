@@ -42,9 +42,22 @@ namespace Celebrity.Service.Services
             }
             return result;
         }
-        public async Task<List<CelebrityDataShow>> GetAllData()
+        public async Task<List<CelebrityData>> GetAllData()
         {
             var result = await celebrityRepository.GetAllData();
+            foreach(var x in result)
+            {
+                x.Movies = await celebrityRepository.GetAllMovies(await celebrityRepository.GetIdByName("Celebrities", x.Name));
+            }
+            return result;
+        }
+        public async Task<List<CelebrityData>> GetDataByMovie(string Movie)
+        {
+            var result = await celebrityRepository.GetDataByMovie(Movie);
+            foreach (var x in result)
+            {
+                x.Movies = await celebrityRepository.GetAllMovies(await celebrityRepository.GetIdByName("Celebrities", x.Name));
+            }
             return result;
         }
         public async Task<bool> UpdateByCelebrityId(CelebrityData data, int id)

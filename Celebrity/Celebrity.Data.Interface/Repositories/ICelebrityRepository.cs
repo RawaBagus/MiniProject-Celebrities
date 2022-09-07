@@ -10,8 +10,9 @@ namespace Celebrity.Data.Interface.Repositories
     public interface ICelebrityRepository
     {
         public Task<bool> CreateNewCelebrity(string name, string date, int TownId);
+        public Task<List<CelebrityData>> GetAllData();
         public Task<bool> DeleteByCelebrityId(int id);
-        public Task<List<CelebrityDataShow>> GetAllData();
+        public Task<List<CelebrityData>> GetDataByMovie(string Movie);
         public Task<bool> UpdateCelebrityById(int id,string name, string date,int TownId);
         public Task<bool> CreateNewMovie(string name);
         public Task<bool> CreateNewAddress(string name);
@@ -21,5 +22,6 @@ namespace Celebrity.Data.Interface.Repositories
         public Task<bool> IsRelationThere(int IdCelebrity, int IdMovie);
         public Task<int> GetIdByName(string variableName, string nama);
         public Task<bool> RelateMovieWithCelebrity(int CelebrityId, int MovieId);
+        public Task<List<string>> GetAllMovies(int id);
     }
 }
