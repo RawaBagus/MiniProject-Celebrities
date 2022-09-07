@@ -18,7 +18,7 @@ List of things to do:
 ![image](https://user-images.githubusercontent.com/39549382/188420207-bb3e4ca2-dfcf-42ee-ac07-a673b48e643e.png)
 # Number 2 DONE
 ![image](https://user-images.githubusercontent.com/39549382/188539363-20c3acf2-a0ca-413d-a7a1-92b1bf630bd3.png)
-# Number 3 In Progress -SQL PAGING-
+# Number 3 GET DONE -SQL PAGING WAITING-
 # Number 4 In Progress
 # Number 5 Done
 ![image](https://user-images.githubusercontent.com/39549382/188779971-3c4e9aac-ec6e-4ba1-9641-8374c2fd73ec.png)
