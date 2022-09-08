@@ -14,6 +14,6 @@ namespace Celebrity.Service.Interface.Services
         public Task<List<CelebrityData>> GetAllData(int num);
         public Task<List<CelebrityData>> GetDataByMovie(string Movie);
 
-        public Task<bool> UpdateByCelebrityId(CelebrityData data, int id);
+        public Task<bool> UpdateByCelebrityId(CelebrityDataUpdate data, int id);
     }
 }

@@ -23,5 +23,9 @@ namespace Celebrity.Data.Interface.Repositories
         public Task<int> GetIdByName(string variableName, string nama);
         public Task<bool> RelateMovieWithCelebrity(int CelebrityId, int MovieId);
         public Task<List<string>> GetAllMovies(int id);
+        public Task<bool> DeleteRelationById(int id);
+
+        public Task<bool> DeleteRelationById(int id,int MovieId);
+
     }
 }

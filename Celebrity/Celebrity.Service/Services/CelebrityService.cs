@@ -2,6 +2,7 @@
 using Celebrity.Model.Entities.SubEntities;
 using Celebrity.Service.Interface.Services;
 using NPOI.SS.Formula.Functions;
+using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,15 +66,16 @@ namespace Celebrity.Service.Services
             }
             return result;
         }
-        public async Task<bool> UpdateByCelebrityId(CelebrityData data, int id)
+        public async Task<bool> UpdateByCelebrityId(CelebrityDataUpdate data, int id)
         {
+
             if (await celebrityRepository.IsAddressThere(data.Town) == false)
             {
                 await celebrityRepository.CreateNewAddress(data.Town);
             }
             int TownId = await celebrityRepository.GetIdByName("Towns", data.Town);
             var result = await celebrityRepository.UpdateCelebrityById(id, data.Name, data.Date_Of_Birth, TownId);
-            foreach(string x in data.Movies)
+            foreach(string x in data.MovieAdd)
             {
                 if(await celebrityRepository.IsMovieThere(x) == false)
                 {
@@ -89,10 +91,19 @@ namespace Celebrity.Service.Services
                     await celebrityRepository.RelateMovieWithCelebrity(id, MovieId);
                 }
             }
+            foreach(string x in data.MovieDelete)
+            {
+                if(await celebrityRepository.IsMovieThere(x))
+                {
+                    int MovieId = await celebrityRepository.GetIdByName("Movies", x);
+                    await celebrityRepository.DeleteRelationById(id,MovieId);
+                }
+            }
             return true;
         }
         public async Task<bool> DeleteByCelebrityId(int id)
         {
+            await celebrityRepository.DeleteRelationById(id);
             var result = await celebrityRepository.DeleteByCelebrityId(id);
             return result;
         }

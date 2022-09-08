@@ -60,8 +60,17 @@ namespace Celebrity.Data.Repositories
         }
         public async Task<bool> DeleteByCelebrityId(int id)
         {
-            await _dbService.ModifyData("Delete from MoviesAndCelebrities where IdCelebrity=@Id", new {Id=id});
             await _dbService.ModifyData("Delete from Celebrities where Id=@Id;", new { Id = id });
+            return true;
+        }
+        public async Task<bool> DeleteRelationById(int id)
+        {
+            await _dbService.ModifyData("Delete from MoviesAndCelebrities where IdCelebrity=@Id", new { Id = id});
+            return true;
+        }
+        public async Task<bool> DeleteRelationById(int id, int MovieId)
+        {
+            await _dbService.ModifyData("Delete from MoviesAndCelebrities where IdCelebrity=@Id and IdMovie=@MovieId", new { Id = id, MovieId=MovieId });
             return true;
         }
 
