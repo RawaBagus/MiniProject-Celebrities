@@ -42,9 +42,14 @@ namespace Celebrity.Service.Services
             }
             return result;
         }
-        public async Task<List<CelebrityData>> GetAllData()
+        public async Task<List<CelebrityData>> GetAllData(int num)
         {
-            var result = await celebrityRepository.GetAllData();
+            int Page = (num-1) * 10;
+            if (Page < 0)
+            {
+                Page = 0;
+            }
+            var result = await celebrityRepository.GetAllData(Page);
             foreach(var x in result)
             {
                 x.Movies = await celebrityRepository.GetAllMovies(await celebrityRepository.GetIdByName("Celebrities", x.Name));

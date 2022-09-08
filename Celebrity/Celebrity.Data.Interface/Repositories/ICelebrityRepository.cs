@@ -10,7 +10,7 @@ namespace Celebrity.Data.Interface.Repositories
     public interface ICelebrityRepository
     {
         public Task<bool> CreateNewCelebrity(string name, string date, int TownId);
-        public Task<List<CelebrityData>> GetAllData();
+        public Task<List<CelebrityData>> GetAllData(int page);
         public Task<bool> DeleteByCelebrityId(int id);
         public Task<List<CelebrityData>> GetDataByMovie(string Movie);
         public Task<bool> UpdateCelebrityById(int id,string name, string date,int TownId);

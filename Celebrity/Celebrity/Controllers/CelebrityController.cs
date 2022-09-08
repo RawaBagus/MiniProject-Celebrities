@@ -28,16 +28,16 @@ namespace Celebrity.API.Controllers
             var result = await celebrityService.DeleteByCelebrityId(id);
             return Ok(result);
         }
-        [HttpGet]
-        public async Task<List<CelebrityData>> GetAllData()
+        [HttpGet("{num:int}")]
+        public async Task<List<CelebrityData>> GetAllData(int num=1)
         {
-            var result = await celebrityService.GetAllData();
+            var result = await celebrityService.GetAllData(num);
             return result;
         }
         [HttpGet("{input}")]
-        public async Task<List<CelebrityData>> GetDataByMovie(string input)
+        public async Task<List<CelebrityData>> GetDataByMovie(string search)
         {
-            var result = await celebrityService.GetDataByMovie(input);
+            var result = await celebrityService.GetDataByMovie(search);
             return result;
         }
         [HttpPut("{id:int}")]

@@ -23,7 +23,7 @@ namespace Celebrity.Data.Repositories
                 ") values(@Name, @Date_Of_Birth, @IdTown)", new {Name=name,Date_Of_Birth=date,IdTown=TownId});
             return true;
         }
-        public async Task<List<CelebrityData>> GetAllData()
+        public async Task<List<CelebrityData>> GetAllData(int page)
         {
             var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
@@ -31,7 +31,7 @@ namespace Celebrity.Data.Repositories
                 "from Celebrities " +
                 "group by Celebrities.Id " +
                 "order by Celebrities.Id asc " +
-                "limit 10",new { });
+                "limit 10 offset @page",new {page = page });
             return result;
         }
         public async Task<List<CelebrityData>> GetDataByMovie(string Movie)
