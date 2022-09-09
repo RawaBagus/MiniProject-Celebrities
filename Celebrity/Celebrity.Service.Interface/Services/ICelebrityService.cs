@@ -11,8 +11,8 @@ namespace Celebrity.Service.Interface.Services
     {
         public Task<bool> CreateNewCelebrity(string name, string date, string address, string[] movies);
         public Task<bool> DeleteByCelebrityId(int id);
-        public Task<List<CelebrityData>> GetAllData(int num);
-        public Task<List<CelebrityData>> GetDataByMovie(string Movie);
+        public Task<List<CelebrityDataShow>> GetAllData(int num);
+        public Task<List<CelebrityDataShow>> GetDataByMovie(string Movie,int num);
 
         public Task<bool> UpdateByCelebrityId(CelebrityDataUpdate data, int id);
     }
