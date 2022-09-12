@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NPOI.SS.Formula.Functions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,10 @@ namespace Celebrity
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
+            var builder = WebApplication.
             CreateHostBuilder(args).Build().Run();
         }
 
