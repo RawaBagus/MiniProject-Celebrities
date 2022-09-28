@@ -43,7 +43,7 @@ namespace Celebrity.Service.Services
             }
             return result;
         }
-        public async Task<List<CelebrityDataShow>> GetAllData(int num)
+        public async Task<List<CelebrityData>> GetAllData(int num)
         {
             int Page = (num-1) * 10;
             if (Page < 0)
@@ -57,11 +57,9 @@ namespace Celebrity.Service.Services
             }
             return result;
         }
-        public async Task<List<CelebrityDataShow>> GetDataByMovie(string Movie,int num)
+        public async Task<List<CelebrityData>> GetDataByMovie(string Movie)
         {
-            int page = (num-1) * 10;
-            Movie = "%" + Movie + "%";
-            var result = await celebrityRepository.GetDataByMovie(Movie, page);
+            var result = await celebrityRepository.GetDataByMovie(Movie);
             foreach (var x in result)
             {
                 x.Movies = await celebrityRepository.GetAllMovies(await celebrityRepository.GetIdByName("Celebrities", x.Name));

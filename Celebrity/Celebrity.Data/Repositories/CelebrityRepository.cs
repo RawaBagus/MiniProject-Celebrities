@@ -23,9 +23,9 @@ namespace Celebrity.Data.Repositories
                 ") values(@Name, @Date_Of_Birth, @IdTown)", new {Name=name,Date_Of_Birth=date,IdTown=TownId});
             return true;
         }
-        public async Task<List<CelebrityDataShow>> GetAllData(int page)
+        public async Task<List<CelebrityData>> GetAllData(int page)
         {
-            var result = await _dbService.GetList<CelebrityDataShow>("select Celebrities.Id, Celebrities.Name, " +
+            var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
                 "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town " +
                 "from Celebrities " +
@@ -34,9 +34,11 @@ namespace Celebrity.Data.Repositories
                 "limit 10 offset @page",new {page = page });
             return result;
         }
-        public async Task<List<CelebrityDataShow>> GetDataByMovie(string Movie,int page)
+        public async Task<List<CelebrityData>> GetDataByMovie(string Movie)
         {
-            var result = await _dbService.GetList<CelebrityDataShow>("select Celebrities.Id, Celebrities.Name, " +
+            string x = "%";
+            x = x + Movie + x;
+            var result = await _dbService.GetList<CelebrityData>("select Celebrities.Name, " +
                 "Celebrities.Date_Of_Birth, " +
                 "(Select Towns.Name from Towns where Towns.Id=Celebrities.IdTown) as Town " +
                 "from Celebrities " +
@@ -45,9 +47,10 @@ namespace Celebrity.Data.Repositories
                 "where Movies.Name like @Name " +
                 "group by Celebrities.Id " +
                 "order by Celebrities.Id asc " +
-                "limit 10 offset @page", new { Name= Movie, page=page});
+                "limit 10", new { Name= x});
             return result;
         }
+
         public async Task<bool> UpdateCelebrityById(int id, string name, string date, int TownId)
         {
             await _dbService.ModifyData("update Celebrities " +

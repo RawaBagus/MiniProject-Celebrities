@@ -12,5 +12,6 @@ namespace Celebrity.Model.Entities
         public string Name { get; set; }
         public string Date_Of_Birth { get; set; }
         public int IdTown { get; set; }
+        public List<string> Movies { get; set; }
     }
 }
