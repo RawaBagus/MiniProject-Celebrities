@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celebrity.API", "Celebrity\Celebrity.API.csproj", "{34937121-D92B-48A2-8104-633400A32E4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celebrity.API", "Celebrity\Celebrity.API.csproj", "{34937121-D92B-48A2-8104-633400A32E4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Core", "1.Core", "{7D24761A-97AD-496D-9E43-3B075DB5BEF4}"
 EndProject
@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Service", "2.Service", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Data", "3.Data", "{9A4B4BCF-B9D5-4512-B23D-F5593DA35CBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celebrity.Model", "Celebrity.Model\Celebrity.Model.csproj", "{3E6CAB89-28A7-48D7-B175-7A95C1BF383C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celebrity.Model", "Celebrity.Model\Celebrity.Model.csproj", "{3E6CAB89-28A7-48D7-B175-7A95C1BF383C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celebrity.Service", "Celebrity.Service\Celebrity.Service.csproj", "{29D4E0CB-DD27-4CC1-B38C-E195D141308C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celebrity.Service", "Celebrity.Service\Celebrity.Service.csproj", "{29D4E0CB-DD27-4CC1-B38C-E195D141308C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celebrity.Service.Interface", "Celebrity.Service.Interface\Celebrity.Service.Interface.csproj", "{1948CF1C-0796-4483-B657-E8AC4203EB24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celebrity.Service.Interface", "Celebrity.Service.Interface\Celebrity.Service.Interface.csproj", "{1948CF1C-0796-4483-B657-E8AC4203EB24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celebrity.Data", "Celebrity.Data\Celebrity.Data.csproj", "{CDD68DB0-83AB-42C7-8465-8B82E9BB6606}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celebrity.Data", "Celebrity.Data\Celebrity.Data.csproj", "{CDD68DB0-83AB-42C7-8465-8B82E9BB6606}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celebrity.Data.Interface", "Celebrity.Data.Interface\Celebrity.Data.Interface.csproj", "{2A271029-9BA1-4523-BE0C-F52FA758B2EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Celebrity.Data.Interface", "Celebrity.Data.Interface\Celebrity.Data.Interface.csproj", "{2A271029-9BA1-4523-BE0C-F52FA758B2EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

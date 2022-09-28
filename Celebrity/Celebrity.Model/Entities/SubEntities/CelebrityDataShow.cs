@@ -9,9 +9,9 @@ namespace Celebrity.Model.Entities.SubEntities
     public class CelebrityDataShow
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Date_Of_Birth { get; set; }
-        public string Town { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Date_Of_Birth { get; set; } = string.Empty;
+        public string Town { get; set; } = string.Empty;
         public List<string> Movies { get; set; }
     }
 }
